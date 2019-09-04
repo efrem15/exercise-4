@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adress </title>
+    <script>
+            function adress(){
+                var name=document.getElementById("nam").value;
+                var street=document.getElementById("st").value;
+                var city=document.getElementById("cit").value;
+                var state=document.getElementById("stat").value;
+                var zipCode=document.getElementById("zip").value;
+                
+                
+                address= name + "<br>" + street + "<br>" + city + " "+state +" " + zipCode;
+                document.getElementById("output").innerHTML=address;
+        
+            }
+        </script>
+</head>
+<body>
+    
+    <p>
+    name:<input type="text" id="nam"><br>
+
+    street:<input type="text" id="st">
+
+    city:<input type="text" id="cit" ><br>
+
+    State:<input type="text" id="stat">
+
+    Zip code:<input type="text" id="zip"><br>
+
+    <button onclick="adress()">Address</button>
+    <div id="output" ></div>
+    </p>
+    
+    
+</body>
+
+</html>
